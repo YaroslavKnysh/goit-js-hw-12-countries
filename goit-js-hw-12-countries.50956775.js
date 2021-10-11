@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./src/sass/main.scss"),require("./src/js/main.js");
 },{"./src/sass/main.scss":"O78K","./src/js/main.js":"O78K"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/goit-js-hw-12-countries.50956775.js.map
+//# sourceMappingURL=/goit-js-hw-12-countries/goit-js-hw-12-countries.50956775.js.map

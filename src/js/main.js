@@ -1,6 +1,11 @@
 import fetchCountries from './fetchCountries.js';
 import cardCountryTpl from '../templates/cardCountry.hbs';
 import debounce from 'lodash.debounce';
+import { alert, notice, info, success, error, Stack } from '@pnotify/core';
+import '@pnotify/core/dist/PNotify.css';
+import '@pnotify/core/dist/BrightTheme.css';
+import * as Confirm from '@pnotify/confirm';
+import '@pnotify/confirm/dist/PNotifyConfirm.css';
 
 const input = document.querySelector('.input_form');
 const listCountries = document.querySelector('.country_list');
@@ -20,6 +25,27 @@ const findCountryFn = e => {
 
       switch (true) {
         case countries.length > 10:
+          const myStack = new Stack({
+            delay: 1000,
+            dir1: 'down',
+            dir2: 'left',
+            mode: 'light',
+            firstpost1: 25,
+            firstpost2: 25,
+            spacing1: 36,
+            spacing2: 36,
+            push: 'top',
+            context: document.body,
+            positioned: true,
+            maxStrategy: 'close',
+          });
+          return alert({
+            title: 'Oh, no!',
+            text: 'Too many matches found. Please enter a more specific query!',
+            type: 'error',
+            stack: myStack,
+            addClass: 'alert',
+          });
           break;
         case countries.length > 1:
           listCountries.innerHTML = countries

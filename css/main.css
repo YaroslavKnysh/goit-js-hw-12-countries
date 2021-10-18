@@ -86,4 +86,10 @@ body {
 .country_img-box {
   margin-left: 70px;
 }
+
+.alert {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+body {
+  background-color: cadetblue;
+}
+
+.input_form {
+  background-color: rgb(165, 220, 223);
+  text-align: left;
+  color: rgb(26, 37, 102);
+  padding-left: 10px;
+  padding-bottom: 2px;
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 250px;
+  height: 40px;
+  border: 3px solid rgb(44, 22, 167);
+  border-radius: 5px;
+  &::placeholder {
+    font-size: 18px;
+    color: rgb(26, 37, 102);
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+.country_select {
+  padding-left: 0;
+}
+.title {
+  margin-left: 170px;
+  margin-bottom: 40px;
+}
+.country_box {
+  display: flex;
+  align-items: flex-start;
+}
+.country_card {
+  padding-left: 10px;
+  padding-top: 50px;
+}
+.country_list-box {
+  padding-left: 20px;
+}
+
+.country_item {
+  display: flex;
+  padding-bottom: 10px;
+  &-value {
+    padding-left: 10px;
+  }
+}
+.country_img-box {
+  margin-left: 70px;
+}

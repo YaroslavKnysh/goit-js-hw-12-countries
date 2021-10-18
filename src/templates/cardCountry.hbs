@@ -1,0 +1,29 @@
+<h1 class='title'>{{name.common}}</h1>
+<div class='country_box'>
+  <div class='country_list-box'>
+    <ul class='country_select'>
+      <li class='country_item'><b>Capital:</b><span
+          class='country_item-value'
+        >{{capital}}</span></li>
+      <li class='country_item'><b>Population:</b><span
+          class='country_item-value'
+        >{{population}}</span></li>
+      <li class='country_item'><b>Languages:</b>
+        <ul class='languages_list'>
+          {{#each languages}}
+            <li class='languages_item'>{{this}}</li>
+          {{/each}}
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class='country_img-box'>
+    <img
+      class='country_img'
+      width='350'
+      height='200'
+      src={{flags.svg}}
+      alt='country_flag'
+    />
+  </div>
+</div>

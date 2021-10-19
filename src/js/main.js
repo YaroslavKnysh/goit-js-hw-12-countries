@@ -56,9 +56,6 @@ const findCountryFn = e => {
           countryCard.innerHTML = cardCountryTpl(countries[0]);
           break;
       }
-    })
-    .catch(er => {
-      console.warn('Что-то пошло не так!');
     });
 };
 

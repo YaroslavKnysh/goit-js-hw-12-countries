@@ -55,6 +55,29 @@ const findCountryFn = e => {
         case countries.length > 0:
           countryCard.innerHTML = cardCountryTpl(countries[0]);
           break;
+        case countries.length !== 1:
+          const myStackEr = new Stack({
+            delay: 1000,
+            dir1: 'down',
+            dir2: 'left',
+            mode: 'light',
+            firstpost1: 25,
+            firstpost2: 25,
+            spacing1: 36,
+            spacing2: 36,
+            push: 'top',
+            context: document.body,
+            positioned: true,
+            maxStrategy: 'close',
+          });
+          alert({
+            title: 'Oh, no!',
+            text: 'No matches',
+            type: 'error',
+            stack: myStackEr,
+            addClass: 'alert',
+          });
+          break;
       }
     });
 };

@@ -39,7 +39,7 @@ const findCountryFn = e => {
             positioned: true,
             maxStrategy: 'close',
           });
-          return alert({
+          alert({
             title: 'Oh, no!',
             text: 'Too many matches found. Please enter a more specific query!',
             type: 'error',
@@ -56,6 +56,9 @@ const findCountryFn = e => {
           countryCard.innerHTML = cardCountryTpl(countries[0]);
           break;
       }
+    })
+    .catch(er => {
+      console.warn('Что-то пошло не так!');
     });
 };
 

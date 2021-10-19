@@ -1,4 +1,4 @@
-<h1 class='title'>{{name.common}}</h1>
+<h1 class='title'>{{name}}</h1>
 <div class='country_box'>
   <div class='country_list-box'>
     <ul class='country_select'>
@@ -11,7 +11,7 @@
       <li class='country_item'><b>Languages:</b>
         <ul class='languages_list'>
           {{#each languages}}
-            <li class='languages_item'>{{this}}</li>
+            <li class='languages_item'>{{this.name}}</li>
           {{/each}}
         </ul>
       </li>

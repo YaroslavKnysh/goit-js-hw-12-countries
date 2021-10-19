@@ -49,7 +49,7 @@ const findCountryFn = e => {
           break;
         case countries.length > 1:
           listCountries.innerHTML = countries
-            .map(({ name }) => `<li>${name.common}</li>`)
+            .map(({ name }) => `<li>${name}</li>`)
             .join('');
           break;
         case countries.length > 0:
